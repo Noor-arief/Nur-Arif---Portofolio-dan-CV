@@ -37,6 +37,47 @@ header{background:var(--paper)}
 html{scroll-padding-top:var(--navigation-height,140px)}
 .nav-shell nav{min-width:0}
 .nav-shell nav button{flex-shrink:0;white-space:nowrap}
+
+/* Compact desktop composition at the browser's normal zoom. */
+@media screen and (min-width:901px){
+ .nav-shell,main{max-width:1160px;padding-left:28px;padding-right:28px}
+ .nav-shell{padding-top:12px;padding-bottom:12px;gap:8px 16px}
+ .brand{font-size:13px}
+ .nav-shell nav{gap:4px}
+ .nav-shell nav button{font-size:12px;padding:7px 11px;line-height:1.4}
+ .language-switch button{padding:8px 10px}
+ .print{padding:7px 12px;font-size:11px}
+ .panel{padding-top:32px;padding-bottom:48px}
+ #about{padding-top:30px}
+ .about-hero{grid-template-columns:minmax(0,1.35fr) minmax(260px,.85fr);gap:48px;align-items:center}
+ .about-copy{padding:0}
+ .about-copy .eyebrow{font-size:9px;margin-bottom:14px}
+ .about-copy h1{font-size:clamp(42px,4vw,54px);line-height:1.04;margin-bottom:16px}
+ .about-role{font-size:19px;margin-bottom:6px}
+ .about-specialties{font-size:12px;line-height:1.65}
+ .about-description{font-size:14px;line-height:1.7;margin-top:16px;max-width:550px}
+ .about-copy .actions{margin-top:18px;gap:9px}
+ .about-copy .btn{padding:10px 14px;font-size:11px}
+ .review-about-link{margin-top:12px;font-size:11px}
+ .about-location{margin-top:15px;font-size:10px}
+ .about-photo-frame{max-width:340px;width:100%}
+ .about-photo-frame figcaption{padding:15px 18px}
+ .about-photo-frame figcaption p{font-size:11px;margin-top:5px}
+ .about-metrics{margin-top:30px;padding:20px 0}
+ .about-metrics strong{font-size:29px}
+ .footer{max-width:1104px}
+}
+@media screen and (min-width:901px) and (max-height:800px){
+ #about{padding-top:24px}
+ .about-hero{gap:36px}
+ .about-copy h1{font-size:46px}
+ .about-photo-frame{max-width:300px}
+ .about-description{font-size:13px;margin-top:13px}
+ .about-copy .eyebrow{margin-bottom:12px}
+ .about-copy .actions{margin-top:15px}
+ .about-location{margin-top:12px}
+}
+
 </style>
 </head>
 <body>
